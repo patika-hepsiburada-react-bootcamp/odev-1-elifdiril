@@ -1,0 +1,20 @@
+{
+  "name": "odev-1",
+  "version": "1.0.0",
+  "description": "patika-hepsiburada-bootcamp-hw-1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
+  "devDependencies": {},
+  "author": "elif gedik",
+  "license": "ISC"
+}
