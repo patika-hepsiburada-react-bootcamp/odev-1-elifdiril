@@ -1,6 +1,7 @@
 import getData from './lib/service.js'
 
-(async () => {
-    const data = await getData(1);
-    console.log(data);
-  })();
+//call getData function
+const data = await getData(1);
+
+//log data
+console.log(data);

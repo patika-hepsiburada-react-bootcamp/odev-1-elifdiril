@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function getData(userId) {
+const getData = async (userId) => {
     try {
         //fetch user data
         const { data: user } = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
@@ -8,7 +8,7 @@ async function getData(userId) {
         //fetch posts 
         const { data: posts } = await axios.get(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
 
-        //create new object
+        //create new user object with posts
         const newUserObj = { ...user, posts };
 
         return newUserObj;
